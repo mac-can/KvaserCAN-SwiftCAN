@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MacCAN-KvaserCAN",
+        "repositoryURL": "https://github.com/mac-can/MacCAN-KvaserCAN.git",
+        "state": {
+          "branch": "main",
+          "revision": "a03cb1042eff9f2c716fa2d5952e8fde275b79b4",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
