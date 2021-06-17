@@ -8,7 +8,7 @@ import Foundation
 import KvaserCAN
 
 print("\(try CanApi.GetVersion())")
-print("Copyright (c) 2020-2021 Uwe Vogt, UV Software, Berlin")
+print("Copyright (c) 2021 Uwe Vogt, UV Software, Berlin")
 print("")
 print("This program is free software: you can redistribute it and/or modify")
 print("it under the terms of the GNU General Public License as published by")
@@ -34,6 +34,7 @@ var n = 0
 if let version = can.wrapperVersion {
     print(">>> Version: major=\(version.major) minor=\(version.minor) patch=\(version.patch)")
 }
+/* FIXME: once when these properties could be read w/o being connected to a device
 //if let canApiVersion = can.canApiVersion {
 //    print(">>> CAN API: major=\(canApiVersion.major) minor=\(canApiVersion.minor) patch=\(canApiVersion.patch)")
 //}
@@ -43,9 +44,10 @@ if let version = can.wrapperVersion {
 //if let libraryInfo = can.libraryInfo {
 //    print(">>> Library: id=\(libraryInfo.id) name=\"\(libraryInfo.name)\" vendor=\"\(libraryInfo.vendor)\"")
 //}
+ */
 //for x in KvaserCanChannel.allCases {
 //    let state = try KvaserCAN.ProbeChannel(channel: x.rawValue, mode: mode)
-//    print(">>> Probe channel \(x.rawValue): \(x.ChannelName()) -> (\(state))")
+//    print(">>> ProbeChannel(\(x.rawValue)): \(x.description) -> (\(state.description))")
 //}
 do {
     step = "InitializeChannel"
@@ -80,7 +82,7 @@ if let mode = can.mode {
     print(">>> Op-Mode: FDOE=\(mode.isFdOperationEnabled) BRSE=\(mode.isBitrateSwitchingEnabled) NISO=\(mode.isNonIsoOperationEnabled) SHRD=\(mode.isSharedAccessEnabled) NXTD=\(mode.isExtendedFramesDisabled) NRTR=\(mode.isRemoteFramesDisabled) ERR=\(mode.isErrorFramesEnabled) MON=\(mode.isMonitorModeEnabled)")
 }
 if let bitrate = can.bitrate {
-    print(">>> Bitrate: frequency=\(bitrate.frequency) nom_brp=\(bitrate.nominal.brp) nom_tseg1=\(bitrate.nominal.tseg1) nom_tseg2=\(bitrate.nominal.tseg2) nom_sjw=\(bitrate.nominal.sjw) nom_sam=\(bitrate.nominal.sam)")
+    print(">>> Bitrate: clock=\(bitrate.frequency) nom_brp=\(bitrate.nominal.brp) nom_tseg1=\(bitrate.nominal.tseg1) nom_tseg2=\(bitrate.nominal.tseg2) nom_sjw=\(bitrate.nominal.sjw) nom_sam=\(bitrate.nominal.sam)")
 }
 if let speed = can.speed {
     print("             \(speed.nominal.busSpeed / 1000.0)kbps @ \(speed.nominal.samplePoint * 100.0)%")

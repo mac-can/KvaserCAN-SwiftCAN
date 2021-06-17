@@ -1,6 +1,6 @@
 ### Swift Demo Program for Kvaser CAN Leaf Interfaces (macOS&reg;)
 
-_Copyright &copy; 2020-2021  Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
+_Copyright &copy; 2021  Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
 
 # Running CAN on Mac&reg;
 
@@ -9,8 +9,8 @@ The macOS driver for CAN Leaf interfaces from [Kvaser](https://www.kvaser.com) i
 
 ## SwiftCAN-KvaserCAN
 
-This repo contains only a little example program that uses the [MacCAN-KvaserCAN Swift Wrapper](https://github.com/mac-can/MacCAN-KvaserCAN/) as a required package dependency.
-Feel free to modify it.
+This repo contains only a little example program that uses the [MacCAN-KvaserCAN](https://github.com/mac-can/MacCAN-KvaserCAN/) Swift wrapper as a required package dependency.
+Feel free to modify the program.
 
 ### MacCAN-KvaserCAN Swift Wrapper
 
