@@ -48,7 +48,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MacCAN-KvaserCAN is dual-licensed under the terms of the BSD 2-Clause "Simplified" License
 and under the terms of the GNU General Public License v3.0 (or any later version).
-The terms of the GNU General Public License v3.0 (or any later version) apply to this work, see above.
+The terms of the GNU General Public License v3.0 (or any later version) apply to this program, see above.
 
 ### Trademarks
 
