@@ -34,17 +34,12 @@ var n = 0
 if let version = can.wrapperVersion {
     print(">>> Version: major=\(version.major) minor=\(version.minor) patch=\(version.patch)")
 }
-/* FIXME: once when these properties could be read w/o being connected to a device
-//if let canApiVersion = can.canApiVersion {
-//    print(">>> CAN API: major=\(canApiVersion.major) minor=\(canApiVersion.minor) patch=\(canApiVersion.patch)")
-//}
-//if let libraryVersion = can.libraryVersion {
-//    print(">>> Library: major=\(libraryVersion.major) minor=\(libraryVersion.minor) patch=\(libraryVersion.patch)")
-//}
-//if let libraryInfo = can.libraryInfo {
-//    print(">>> Library: id=\(libraryInfo.id) name=\"\(libraryInfo.name)\" vendor=\"\(libraryInfo.vendor)\"")
-//}
- */
+if let canApiVersion = can.canApiVersion {
+    print(">>> CAN API: major=\(canApiVersion.major) minor=\(canApiVersion.minor) patch=\(canApiVersion.patch)")
+}
+if let libraryVersion = can.libraryVersion {
+    print(">>> Library: major=\(libraryVersion.major) minor=\(libraryVersion.minor) patch=\(libraryVersion.patch)")
+}
 //for x in KvaserCanChannel.allCases {
 //    let state = try KvaserCAN.ProbeChannel(channel: x.rawValue, mode: mode)
 //    print(">>> ProbeChannel(\(x.rawValue)): \(x.description) -> (\(state.description))")
@@ -62,12 +57,6 @@ do {
 } catch {
     print("+++ error:   \(step) returned \(error)")
     exit(1)
-}
-if let canApiVersion = can.canApiVersion {
-    print(">>> CAN API: major=\(canApiVersion.major) minor=\(canApiVersion.minor) patch=\(canApiVersion.patch)")
-}
-if let libraryVersion = can.libraryVersion {
-    print(">>> Library: major=\(libraryVersion.major) minor=\(libraryVersion.minor) patch=\(libraryVersion.patch)")
 }
 if let libraryInfo = can.libraryInfo {
     print(">>> Library: id=\(libraryInfo.id) name=\"\(libraryInfo.name)\" vendor=\"\(libraryInfo.vendor)\"")
