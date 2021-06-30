@@ -63,5 +63,3 @@ _If you connect your CAN device to a real CAN network when using this library, y
 
 E-Mail: mailto://info@mac.can.com \
 Internet: https://www.mac-can.com
-
-##### *Enjoy!*
