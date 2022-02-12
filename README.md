@@ -1,20 +1,20 @@
-### Swift Demo Program for Kvaser CAN Leaf Interfaces (macOS&reg;)
+### Swift Demo Program for Kvaser CAN USB Interfaces (macOS&reg;)
 
-_Copyright &copy; 2021  Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
+_Copyright &copy; 2021-2022  Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
 
 # Running CAN on Mac&reg;
 
-_Running CAN on Mac_ is the mission of the MacCAN project.
+_Running CAN and CAN FD on Mac_ is the mission of the MacCAN project.
 The macOS driver for CAN Leaf interfaces from [Kvaser](https://www.kvaser.com) is based on _MacCAN-Core_ which is an abstraction (or rather a wrapper) of Apple´s IOUsbKit to create USB user-space drivers for CAN interfaces from various vendors under macOS.
 
 ## SwiftCAN-KvaserCAN
 
-This repo contains only a little example program that uses the [MacCAN-KvaserCAN](https://github.com/mac-can/MacCAN-KvaserCAN/) Swift wrapper as a required package dependency.
+This repo contains only a little example program that uses the [MacCAN-KvaserCAN](https://github.com/mac-can/KvaserCAN-Library/) Swift wrapper as a required package dependency.
 Feel free to modify the program.
 
 ### MacCAN-KvaserCAN Swift Wrapper
 
-Visit my [GitHub Pages](https://mac-can.github.io/drivers/KvaserCAN/) to learn more about the macOS driver and SDK for Kvaser CAN Leaf interfaces.
+Visit my [GitHub Pages](https://mac-can.github.io/drivers/KvaserCAN/) to learn more about the macOS driver and SDK for Kvaser CAN USB interfaces.
 
 ### Supported CAN Leaf Hardware
 
@@ -23,7 +23,7 @@ Visit my [GitHub Pages](https://mac-can.github.io/drivers/KvaserCAN/) to learn m
 
 ## Known Bugs and Caveats
 
-- For a list of known bugs and caveats see tab [Issues](https://github.com/mac-can/MacCAN-KvaserCAN/issues) in the GitHub repo.
+- For a list of known bugs and caveats see tab [Issues](https://github.com/mac-can/KvaserCAN-Library/issues) in the GitHub repo.
 
 ## This and That
 
