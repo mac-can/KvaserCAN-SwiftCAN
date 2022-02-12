@@ -2,13 +2,13 @@
 //
 //  main.swift
 //  SwiftCAN-KvaserCAN
-//  Copyright (c) 2021 Uwe Vogt, UV Software, Berlin
+//  Copyright (c) 2021-2022 Uwe Vogt, UV Software, Berlin
 //
 import Foundation
 import KvaserCAN
 
 print("\(try CanApi.GetVersion())")
-print("Copyright (c) 2021 Uwe Vogt, UV Software, Berlin")
+print("Copyright (c) 2021-2022 Uwe Vogt, UV Software, Berlin")
 print("")
 print("This program is free software: you can redistribute it and/or modify")
 print("it under the terms of the GNU General Public License as published by")
@@ -62,7 +62,7 @@ if let libraryInfo = can.libraryInfo {
     print(">>> Library: id=\(libraryInfo.id) name=\"\(libraryInfo.name)\" vendor=\"\(libraryInfo.vendor)\"")
 }
 if let deviceInfo = can.deviceInfo {
-    print(">>> Device : type=\(deviceInfo.type) name=\"\(deviceInfo.name)\" vendor=\"\(deviceInfo.vendor)\"")
+    print(">>> Device : channel=\(deviceInfo.channel) name=\"\(deviceInfo.name)\" vendor=\"\(deviceInfo.vendor)\"")
 }
 if let capa = can.capability {
     print(">>> Op-Capa: FDOE=\(capa.isFdOperationEnabled) BRSE=\(capa.isBitrateSwitchingEnabled) NISO=\(capa.isNonIsoOperationEnabled) SHRD=\(capa.isSharedAccessEnabled) NXTD=\(capa.isExtendedFramesDisabled) NRTR=\(capa.isRemoteFramesDisabled) ERR=\(capa.isErrorFramesEnabled) MON=\(capa.isMonitorModeEnabled)")
