@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F6452AA267B56B000895BB8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6452A9267B56B000895BB8 /* main.swift */; };
-		0F7BCB15267B926900C7BCD8 /* MacCAN-KvaserCAN in Frameworks */ = {isa = PBXBuildFile; productRef = 0F7BCB14267B926900C7BCD8 /* MacCAN-KvaserCAN */; };
+		4405E3F727B85CEB005D9AB7 /* MacCAN-KvaserCAN in Frameworks */ = {isa = PBXBuildFile; productRef = 4405E3F627B85CEB005D9AB7 /* MacCAN-KvaserCAN */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F6452A6267B56B000895BB8 /* SwiftCAN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftCAN; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6452A6267B56B000895BB8 /* SwiftCAN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SwiftCAN; path = /Users/makemake/Projects/MacCAN/SwiftCAN/KvaserCAN/build/Debug/SwiftCAN; sourceTree = "<absolute>"; };
 		0F6452A9267B56B000895BB8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F7BCB15267B926900C7BCD8 /* MacCAN-KvaserCAN in Frameworks */,
+				4405E3F727B85CEB005D9AB7 /* MacCAN-KvaserCAN in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,17 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				0F6452A8267B56B000895BB8 /* SwiftCAN */,
-				0F6452A7267B56B000895BB8 /* Products */,
-				0F7BCB10267B91D200C7BCD8 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		0F6452A7267B56B000895BB8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0F6452A6267B56B000895BB8 /* SwiftCAN */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		0F6452A8267B56B000895BB8 /* SwiftCAN */ = {
@@ -63,13 +53,6 @@
 				0F6452A9267B56B000895BB8 /* main.swift */,
 			);
 			path = SwiftCAN;
-			sourceTree = "<group>";
-		};
-		0F7BCB10267B91D200C7BCD8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,7 +72,7 @@
 			);
 			name = SwiftCAN;
 			packageProductDependencies = (
-				0F7BCB14267B926900C7BCD8 /* MacCAN-KvaserCAN */,
+				4405E3F627B85CEB005D9AB7 /* MacCAN-KvaserCAN */,
 			);
 			productName = SwiftCAN;
 			productReference = 0F6452A6267B56B000895BB8 /* SwiftCAN */;
@@ -119,9 +102,9 @@
 			);
 			mainGroup = 0F64529D267B56B000895BB8;
 			packageReferences = (
-				0F7BCB13267B926900C7BCD8 /* XCRemoteSwiftPackageReference "MacCAN-KvaserCAN" */,
+				4405E3F527B85CEB005D9AB7 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */,
 			);
-			productRefGroup = 0F6452A7267B56B000895BB8 /* Products */;
+			productRefGroup = 0F64529D267B56B000895BB8;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -299,9 +282,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0F7BCB13267B926900C7BCD8 /* XCRemoteSwiftPackageReference "MacCAN-KvaserCAN" */ = {
+		4405E3F527B85CEB005D9AB7 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-can/MacCAN-KvaserCAN.git";
+			repositoryURL = "https://github.com/mac-can/KvaserCAN-Library";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -310,9 +293,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0F7BCB14267B926900C7BCD8 /* MacCAN-KvaserCAN */ = {
+		4405E3F627B85CEB005D9AB7 /* MacCAN-KvaserCAN */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0F7BCB13267B926900C7BCD8 /* XCRemoteSwiftPackageReference "MacCAN-KvaserCAN" */;
+			package = 4405E3F527B85CEB005D9AB7 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */;
 			productName = "MacCAN-KvaserCAN";
 		};
 /* End XCSwiftPackageProductDependency section */

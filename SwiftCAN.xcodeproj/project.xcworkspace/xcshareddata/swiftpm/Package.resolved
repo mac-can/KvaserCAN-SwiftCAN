@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "MacCAN-KvaserCAN",
-        "repositoryURL": "https://github.com/mac-can/MacCAN-KvaserCAN.git",
+        "repositoryURL": "https://github.com/mac-can/KvaserCAN-Library",
         "state": {
           "branch": "main",
           "revision": "18b198fe88b30419fdfa5eededd34ab6d85ac956",
