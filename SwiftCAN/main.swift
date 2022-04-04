@@ -24,7 +24,7 @@ print("You should have received a copy of the GNU General Public License")
 print("along with this program.  If not, see <http://www.gnu.org/licenses/>.")
 print("")
 
-let can = KvaserCAN()
+let can = CanApi()
 let channel: Int32 = 0
 let mode: CanApi.Mode = [.DefaultOperationMode]
 let baud: CanApi.CiaIndex = .Index250kbps
@@ -40,10 +40,15 @@ if let canApiVersion = can.canApiVersion {
 if let libraryVersion = can.libraryVersion {
     print(">>> Library: major=\(libraryVersion.major) minor=\(libraryVersion.minor) patch=\(libraryVersion.patch)")
 }
-//for x in KvaserCanChannel.allCases {
-//    let state = try KvaserCAN.ProbeChannel(channel: x.rawValue, mode: mode)
-//    print(">>> ProbeChannel(\(x.rawValue)): \(x.description) -> (\(state.description))")
-//}
+if let libraryInfo = can.libraryInfo {
+    print(">>> Library: id=\(libraryInfo.id) name=\"\(libraryInfo.name)\" vendor=\"\(libraryInfo.vendor)\"")
+}
+if let info = try? CanApi.GetFirstChannel() {
+    print(">>> Device: channel=\(info.channel), name=\(info.name), vendor=\(info.vendor), library=\(info.library), driver=\(info.driver)")
+    while let info = try? CanApi.GetNextChannel() {
+        print(">>> Device: channel=\(info.channel), name=\(info.name), vendor=\(info.vendor), library=\(info.library), driver=\(info.driver)")
+    }
+}
 do {
     step = "InitializeChannel"
     print(">>> \(step)(channel: \(channel), mode: \(mode))")
@@ -57,9 +62,6 @@ do {
 } catch {
     print("+++ error:   \(step) returned \(error)")
     exit(1)
-}
-if let libraryInfo = can.libraryInfo {
-    print(">>> Library: id=\(libraryInfo.id) name=\"\(libraryInfo.name)\" vendor=\"\(libraryInfo.vendor)\"")
 }
 if let deviceInfo = can.deviceInfo {
     print(">>> Device : channel=\(deviceInfo.channel) name=\"\(deviceInfo.name)\" vendor=\"\(deviceInfo.vendor)\"")

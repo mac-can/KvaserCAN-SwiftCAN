@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F6452AA267B56B000895BB8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6452A9267B56B000895BB8 /* main.swift */; };
-		4405E3F727B85CEB005D9AB7 /* MacCAN-KvaserCAN in Frameworks */ = {isa = PBXBuildFile; productRef = 4405E3F627B85CEB005D9AB7 /* MacCAN-KvaserCAN */; };
+		44D5017827FB35BA00B77AD6 /* MacCAN-KvaserCAN in Frameworks */ = {isa = PBXBuildFile; productRef = 44D5017727FB35BA00B77AD6 /* MacCAN-KvaserCAN */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F6452A6267B56B000895BB8 /* SwiftCAN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SwiftCAN; path = /Users/makemake/Projects/MacCAN/SwiftCAN/KvaserCAN/build/Debug/SwiftCAN; sourceTree = "<absolute>"; };
 		0F6452A9267B56B000895BB8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		44D5017227FB343E00B77AD6 /* SwiftCAN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftCAN; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4405E3F727B85CEB005D9AB7 /* MacCAN-KvaserCAN in Frameworks */,
+				44D5017827FB35BA00B77AD6 /* MacCAN-KvaserCAN in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				0F6452A8267B56B000895BB8 /* SwiftCAN */,
+				44D5017227FB343E00B77AD6 /* SwiftCAN */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,10 +73,10 @@
 			);
 			name = SwiftCAN;
 			packageProductDependencies = (
-				4405E3F627B85CEB005D9AB7 /* MacCAN-KvaserCAN */,
+				44D5017727FB35BA00B77AD6 /* MacCAN-KvaserCAN */,
 			);
 			productName = SwiftCAN;
-			productReference = 0F6452A6267B56B000895BB8 /* SwiftCAN */;
+			productReference = 44D5017227FB343E00B77AD6 /* SwiftCAN */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +86,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					0F6452A5267B56B000895BB8 = {
 						CreatedOnToolsVersion = 12.5;
@@ -102,7 +103,7 @@
 			);
 			mainGroup = 0F64529D267B56B000895BB8;
 			packageReferences = (
-				4405E3F527B85CEB005D9AB7 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */,
+				44D5017627FB35BA00B77AD6 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */,
 			);
 			productRefGroup = 0F64529D267B56B000895BB8;
 			projectDirPath = "";
@@ -176,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -231,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -243,7 +244,9 @@
 		0F6452AE267B56B000895BB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -252,7 +255,9 @@
 		0F6452AF267B56B000895BB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -282,7 +287,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4405E3F527B85CEB005D9AB7 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */ = {
+		44D5017627FB35BA00B77AD6 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-can/KvaserCAN-Library";
 			requirement = {
@@ -293,9 +298,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4405E3F627B85CEB005D9AB7 /* MacCAN-KvaserCAN */ = {
+		44D5017727FB35BA00B77AD6 /* MacCAN-KvaserCAN */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4405E3F527B85CEB005D9AB7 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */;
+			package = 44D5017627FB35BA00B77AD6 /* XCRemoteSwiftPackageReference "KvaserCAN-Library" */;
 			productName = "MacCAN-KvaserCAN";
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "MacCAN-KvaserCAN",
-        "repositoryURL": "https://github.com/mac-can/KvaserCAN-Library",
-        "state": {
-          "branch": "main",
-          "revision": "18b198fe88b30419fdfa5eededd34ab6d85ac956",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "kvasercan-library",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mac-can/KvaserCAN-Library",
+      "state" : {
+        "branch" : "main",
+        "revision" : "875ac901ebeecbf6bf6fc1b1abb33172963b49cb"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
