@@ -2,13 +2,13 @@
 //
 //  main.swift
 //  SwiftCAN-KvaserCAN
-//  Copyright (c) 2021-2022 Uwe Vogt, UV Software, Berlin
+//  Copyright (c) 2021-2023 Uwe Vogt, UV Software, Berlin
 //
 import Foundation
 import KvaserCAN
 
 print("\(try CanApi.GetVersion())")
-print("Copyright (c) 2021-2022 Uwe Vogt, UV Software, Berlin")
+print("Copyright (c) 2021-2023 Uwe Vogt, UV Software, Berlin")
 print("")
 print("This program is free software: you can redistribute it and/or modify")
 print("it under the terms of the GNU General Public License as published by")
