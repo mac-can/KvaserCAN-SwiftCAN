@@ -1,6 +1,6 @@
 ### Swift Demo Program for Kvaser CAN USB Interfaces (macOS&reg;)
 
-_Copyright &copy; 2021-2022  Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
+_Copyright &copy; 2021-2023  Uwe Vogt, UV Software, Berlin (info@mac-can.com)_
 
 # Running CAN on Mac&reg;
 
@@ -53,7 +53,7 @@ The terms of the GNU General Public License v3.0 (or any later version) apply to
 ### Trademarks
 
 Mac and macOS are trademarks of Apple Inc., registered in the U.S. and other countries. \
-All other company, product and service names mentioned herein are trademarks, registered trademarks or service marks of their respective owners.
+All other company, product and service names mentioned herein may be trademarks, registered trademarks, or service marks of their respective owners.
 
 ### Hazard Note
 
